@@ -145,14 +145,3 @@ pre {
 
 
 
-@mixin breakpoint($point) {
-  @if $point == L {
-    @media (max-width: 1600px) { @content; }
-  }
-  @if $point == M {
-    @media (max-width: 1250px) { @content; }
-  }
-  @else if $point == S {
-    @media (max-width: 650px)  { @content; }
-  }
-}

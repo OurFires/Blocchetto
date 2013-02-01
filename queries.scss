@@ -1,0 +1,17 @@
+$L: 1600px;
+$M: 1250px;
+$S: 650px;
+
+
+
+@mixin breakpoint($point) {
+  @if $point == L {
+    @media (max-width: $L) { @content; }
+  }
+  @if $point == M {
+    @media (max-width: $M) { @content; }
+  }
+  @else if $point == S {
+    @media (max-width: $S)  { @content; }
+  }
+}
